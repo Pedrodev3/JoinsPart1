@@ -54,7 +54,7 @@ ORDER BY SG_ESTADO;
 
 
 --
--- Padrão Oracle Inner Join
+-- Padrï¿½o Oracle Inner Join
 --
 
 SELECT E.SG_ESTADO, E.NM_ESTADO,
@@ -64,7 +64,7 @@ WHERE E.ID_ESTADO = C.ID_ESTADO
 ORDER BY SG_ESTADO;
 
 --
--- Padrão Oracle Outer Join
+-- Padrï¿½o Oracle Outer Join
 --
 
 SELECT E.SG_ESTADO, E.NM_ESTADO,
@@ -74,7 +74,7 @@ WHERE E.ID_ESTADO = C.ID_ESTADO(+)
 ORDER BY SG_ESTADO;
 
 --
--- Padrão Oracle Join 1TDSVJ
+-- Padrï¿½o Oracle Join 1TDSVJ
 -- Select Join com Estado Cidade e Bairro
 --
 
@@ -101,7 +101,7 @@ ON(B.ID_BAIRRO = L.ID_BAIRRO)
 ORDER BY E.SG_ESTADO, C.NM_CIDADE, B.NM_BAIRRO;
 
 --
--- Select Join com Estado, Cidade, Bairro, Logradouro e Endereço Paciente
+-- Select Join com Estado, Cidade, Bairro, Logradouro e Endereï¿½o Paciente
 --
 
 SELECT E.SG_ESTADO, E.NM_ESTADO,
@@ -120,7 +120,7 @@ ORDER BY E.SG_ESTADO, C.NM_CIDADE, B.NM_BAIRRO, L.NM_LOGRADOURO, P.NM_PACIENTE;
 
 
 --
--- Select Inner Join com Estado, Cidade, Bairro, Logradouro e Endereço Paciente
+-- Select Inner Join com Estado, Cidade, Bairro, Logradouro e Endereï¿½o Paciente
 --
 
 SELECT E.SG_ESTADO, E.NM_ESTADO,
@@ -144,7 +144,7 @@ ORDER BY E.SG_ESTADO, C.NM_CIDADE, B.NM_BAIRRO, L.NM_LOGRADOURO, P.NM_PACIENTE;
 SELECT COUNT(*) FROM T_RHSTU_PACIENTE;
 
 --
--- CriandoView Logíca
+-- CriandoView Logica
 --
 CREATE OR REPLACE VIEW V_DADOS_RHSTU_PACIENTE AS
 SELECT E.SG_ESTADO, E.NM_ESTADO,
